@@ -28,6 +28,9 @@ export const api = {
   },
   login(body) {
     return axios.post("http://localhost:8000/api/fazer-login", body);
+  },
+  validateToken() {
+    return axiosInstance.post("http://localhost:8000/api/validar-token");
   }
 };
 

@@ -13,6 +13,7 @@
 <script>
 import Header from "@/components/Header.vue";
 import Footer from "@/components/Footer.vue";
+import { api } from "@/services.js"; 
 
 export default {
   components: {
@@ -20,8 +21,16 @@ export default {
     Footer
   },
   created() {
-    if(window.localStorage.toke) {
-      this.$store.dispatch("getUsuario")
+    if(window.localStorage.token) {
+      api
+        .validateToken()
+        .then(() => {
+          this.$store.dispatch("getUsuario")
+        })
+        .catch(error => {
+          console.log(error);
+          window.localStorage.removeItem("token");
+        });
     }
   }
 };
