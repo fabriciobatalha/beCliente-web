@@ -7,7 +7,7 @@
     <nav class="sidenav">
       <ul>
         <li>
-          <router-link :to="{name: 'usuario'}">Produtos</router-link>
+          <router-link :to="{name: 'usuario'}"> Meus Dados </router-link>
         </li>
         <li>
         <li>

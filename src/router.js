@@ -22,17 +22,12 @@ const router = new Router({
     },
     {
       path: "/usuario",
+      name: "usuario",
       component: Usuario,
       meta: {
-        login: true
+        login: true,
+
       }
-      // children: [
-      //   {
-      //     path: "editar",
-      //     name: "usuario-editar",
-      //     component: UsuarioEditar
-      //   }
-      // ]
     }
   ]
 });
