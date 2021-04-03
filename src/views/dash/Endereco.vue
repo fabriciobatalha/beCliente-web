@@ -1,5 +1,5 @@
 <template>
-  <p> Endereço </p>
+  <p> {{$store.state.usuario.rua}} </p>
 </template>
 
 <script>
