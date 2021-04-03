@@ -9,8 +9,8 @@
       <button class="btn" @click.prevent="logar">Logar</button>
       <ErroNotificacao :erros="erros"/>
     </form>
-    <p class="perdeu">
-      <a href="/" target="_blank">Perdeu a senha? Clique aqui.</a>
+    <p class="labelChamada">
+      Cadastre-se e seja um cliente <strong> Bemol </strong>
     </p>
     <LoginCriar/>
   </section>
@@ -77,13 +77,8 @@ form {
   margin-right: auto;
 }
 
-.perdeu {
+.labelChamada {
   text-align: center;
-  margin: 20px auto 0 auto;
-}
-
-.perdeu a:hover {
-  color: #87f;
-  text-decoration: underline;
+  margin: 100px auto 0 auto;
 }
 </style>
