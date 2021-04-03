@@ -9,7 +9,10 @@
 
 <script>
 export default {
-  name: "Endereco"
+  name: "Endereco",
+  created() {
+    document.title = " Dash | Endereço";
+  }
 }
 </script>
 

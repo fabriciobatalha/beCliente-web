@@ -7,7 +7,10 @@
 
 <script>
 export default {
-  name: "MeusDados"
+  name: "MeusDados",
+  created() {
+    document.title = " Dash | Meus Dados";
+  }
 };
 </script>
 
