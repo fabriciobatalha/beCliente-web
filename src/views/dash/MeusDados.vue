@@ -1,24 +1,31 @@
 <template>
-  <div class="meus-dados">
-    <div class="info">
-      <h2> Nome: {{$store.state.usuario.nome}} </h2>
-      <p> E-mail: {{$store.state.usuario.email}} </p>
-    </div>
+  <div class="card">
+    <h2> {{ $store.state.usuario.nome }} </h2>
+    <p class="info"> E-mail: {{ $store.state.usuario.email }} </p>
   </div>
 </template>
 
 <script>
 export default {
   name: "MeusDados"
-}
+};
 </script>
 
 <style scoped>
-.meus-dados {}
-
-.info {}
+.card {
+  padding: 50px;
+  background: #fff;
+  border-radius: 20px;
+  transition: all 0.2s;
+  box-shadow: 0 6px 12px rgba(30, 60, 90, 0.2);
+}
 
 h2 {
-  margin-bottom: 20px;
+  color: #87f;
+  font-weight: bold;
+}
+
+.info {
+  margin-top: 20px;
 }
 </style>
