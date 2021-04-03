@@ -3,7 +3,7 @@
 </template>-->
 
 <template>
-  <section class="usuario">
+  <section class="dash">
     <nav class="sidenav">
       <ul>
         <li>
@@ -25,7 +25,7 @@
 
 <script>
 export default {
-  name: "Usuario",
+  name: "Dash",
   methods: {
     deslogar() {
       this.$store.dispatch("deslogarUsuario");
@@ -39,7 +39,7 @@ export default {
 </script>
 
 <style scoped>
-.usuario {
+.dash {
   display: grid;
   grid-template-columns: minmax(140px, 200px) 1fr;
   max-width: 900px;
@@ -49,7 +49,7 @@ export default {
 }
 
 @media screen and (max-width: 500px) {
-  .usuario {
+  .dash {
     grid-template-columns: 1fr;
     margin: 0px auto;
   }

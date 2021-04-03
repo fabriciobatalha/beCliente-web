@@ -2,7 +2,9 @@ import Vue from "vue"
 import Router from "vue-router"
 import Home from "./views/Home.vue"
 import Login from "./views/Login.vue"
-import Usuario from "./views/dash/Usuario.vue"
+import Dash from "./views/dash/Dash.vue"
+import MeusDados from "./views/dash/MeusDados.vue"
+import Endereco from "./views/dash/Endereco.vue"
 
 Vue.use(Router)
 
@@ -21,9 +23,21 @@ const router = new Router({
       component: Login
     },
     {
-      path: "/meus-dados",
-      name: "meus-dados",
-      component: Usuario,
+      path: "/dash",
+      name: "dash",
+      component: Dash,
+      children: [
+        {
+          path: "meus-dados",
+          name: "meus-dados",
+          component: MeusDados
+        },
+        {
+          path: "endereco",
+          name: "endereco",
+          component: Endereco
+        }
+      ],
       meta: {
         login: true,
       }
