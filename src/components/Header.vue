@@ -2,7 +2,7 @@
   <header>
     <nav>
       <router-link to="/" class="logo">
-        <img src="@/assets/logo.jpeg" alt="Ranek">
+        <img src="@/assets/logo.jpeg" alt="beCliente">
       </router-link>
       <router-link v-if="$store.state.login" class="btn" :to="{name: 'meus-dados'}">
         {{nome}}

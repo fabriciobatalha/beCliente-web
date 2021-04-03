@@ -6,6 +6,8 @@
         <router-view/>
       </transition>
     </main>
+
+    <img v-if="$store.state.login" src="@/assets/chat.png" alt="Chat Bemol" id="chat">
     <Footer/>
   </div>
 </template>
@@ -142,5 +144,12 @@ textarea:focus {
 .v-enter-active,
 .v-leave-active {
   transition: all 0.3s;
+}
+#chat {
+  width: 70px;
+  position: fixed;
+  right: 3%;
+  bottom: 5%;
+  z-index: 100;
 }
 </style>
