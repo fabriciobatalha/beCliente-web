@@ -7,11 +7,10 @@
     <nav class="sidenav">
       <ul>
         <li>
-          <router-link :to="{name: 'usuario'}"> Meus Dados </router-link>
+          <router-link :to="{name: 'meus-dados'}"> Meus Dados </router-link>
         </li>
         <li>
-        <li>
-          <router-link :to="{name: 'usuario-editar'}">Editar Usuário</router-link>
+          <router-link :to="{name: 'endereco'}"> Endereço </router-link>
         </li>
         <li>
           <button @click="deslogar">Deslogar</button>

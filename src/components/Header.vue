@@ -4,7 +4,7 @@
       <router-link to="/" class="logo">
         <img src="@/assets/ranek.svg" alt="Ranek">
       </router-link>
-      <router-link v-if="$store.state.login" class="btn" to="/usuario">
+      <router-link v-if="$store.state.login" class="btn" to="/meus-dados">
         {{nome}}
       </router-link>
       <router-link v-else class="btn" to="/login"> Fazer Login </router-link>
