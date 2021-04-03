@@ -29,7 +29,7 @@ export default {
         await this.$store.dispatch("criarUsuario", this.$store.state.usuario);
         await this.$store.dispatch("logarUsuario", this.$store.state.usuario);
         await this.$store.dispatch("getUsuario");
-        this.$router.push({ name: "usuario" });
+        this.$router.push({ name: "meus-dados" });
       } catch (error) {
         console.log(error);
       }

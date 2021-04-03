@@ -2,7 +2,7 @@
   <header>
     <nav>
       <router-link to="/" class="logo">
-        <img src="@/assets/ranek.svg" alt="Ranek">
+        <img src="@/assets/logo.jpeg" alt="Ranek">
       </router-link>
       <router-link v-if="$store.state.login" class="btn" to="/meus-dados">
         {{nome}}
@@ -37,6 +37,6 @@ nav {
 }
 
 .logo img {
-  width: 90px;
+  width: 70px;
 }
 </style>
