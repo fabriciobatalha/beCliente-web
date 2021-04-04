@@ -49,4 +49,3 @@ Feito com ❤️ por Fabrício S. Batalha 👋🏽 Entre em contato!
 
 [![Linkedin Badge](https://img.shields.io/badge/-Fabrício-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/fabriciobatalha/)](https://www.linkedin.com/in/fabriciobatalha) 
 [![Gmail Badge](https://img.shields.io/badge/-fabriciobatalha.dev@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:fabriciobatalha.dev@gmail.com)](mailto:fabriciobatalha.dev@gmail.com)
-
