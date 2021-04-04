@@ -1,4 +1,4 @@
-<h1 align="center"> beCliente - Web </h1>
+<h1 align="center"> beCliente-web </h1>
 <p align="center"> Versão web para acessar quando a API estiver ON </p>
 
 ### Pré-requisitos
@@ -29,11 +29,11 @@ $ npm run serve
 
 As seguintes ferramentas foram usadas na construção do projeto:
 
-- [Vue](https://vuejs.org/ptbr/)
+- [Vue](https://br.vuejs.org/)
+- [Vue-Router](https://router.vuejs.org/)
 - [Vuex](https://vuex.vuejs.org/ptbr/)
-- [Vue-Router](https://router.vuejs.org/ptbr/)
 - [Axios](https://github.com/axios/axios)
-- [Viacep](https://viacep.com.br/)
+- [ViaCEP](https://viacep.com.br/)
 - [PokéAPI](https://pokeapi.co/)
 
 ### Autor
@@ -47,6 +47,6 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 Feito com ❤️ por Fabrício S. Batalha 👋🏽 Entre em contato!
 
-[![Linkedin Badge](https://img.shields.io/badge/-Felipe-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/fabriciobatalha/)](https://www.linkedin.com/in/fabriciobatalha) 
+[![Linkedin Badge](https://img.shields.io/badge/-Fabrício-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/fabriciobatalha/)](https://www.linkedin.com/in/fabriciobatalha) 
 [![Gmail Badge](https://img.shields.io/badge/-fabriciobatalha.dev@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:fabriciobatalha.dev@gmail.com)](mailto:fabriciobatalha.dev@gmail.com)
 
