@@ -3,7 +3,7 @@
 import axios from "axios";
 
 const axiosInstance = axios.create({
-  baseURL: "http://10.0.0.109:8000/api"
+  baseURL: "http://localhost:8000/api"
 });
 
 axiosInstance.interceptors.request.use(
@@ -27,10 +27,13 @@ export const api = {
     return axiosInstance.post(endpoint, body);
   },
   login(body) {
-    return axios.post("http://10.0.0.109:8000/api/fazer-login", body);
+    return axios.post("http://localhost:8000/api/fazer-login", body);
   },
   validateToken() {
-    return axiosInstance.post("http://10.0.0.109:8000/api/validar-token");
+    return axiosInstance.post("http://localhost:8000/api/validar-token");
+  },
+  getProds() {
+    return axios.get("http://localhost:8000/api/produto");
   }
 };
 
