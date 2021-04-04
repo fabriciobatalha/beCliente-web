@@ -33,7 +33,7 @@ export const api = {
     return axiosInstance.post("http://localhost:8000/api/validar-token");
   },
   getProds() {
-    return axios.get("http://localhost:8000/api/produto");
+    return axios.get("https://pokeapi.co/api/v2/pokemon");
   }
 };
 
