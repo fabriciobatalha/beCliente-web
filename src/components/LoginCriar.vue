@@ -34,7 +34,11 @@ export default {
         await this.$store.dispatch("getUsuario");
         this.$router.push({ name: "meus-dados" });
       } catch (error) {
-        this.erros.push("Preencha todos os campos!");
+        if(error.response.status == 500) {
+          this.erros.push("Preencha todos os campos!");
+        } else {
+          this.erros.push(error.response.data.message);
+        }
       }
     }
   }
