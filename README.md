@@ -1,5 +1,5 @@
 <h1 align="center"> beCliente-web </h1>
-<p align="center"> Versão web para acessar quando a API estiver ON </p>
+<p align="center"> Este projeto deverá rodar juntamente com o projeto beCliente-api </p>
 
 ### Pré-requisitos
 
