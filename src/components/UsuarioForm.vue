@@ -7,11 +7,11 @@
     <label for="senha">Senha</label>
     <input id="senha" name="senha" type="password" v-model="senha">
     <label for="cep">Cep</label>
-    <input id="cep" name="cep" type="text" v-model="cep" @keyup="preencherCep">
+    <input id="cep" name="cep" type="number" v-model="cep" @keyup="preencherCep" maxlength = "8" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
     <label for="rua">Rua</label>
     <input id="rua" name="rua" type="text" v-model="rua">
     <label for="numero">Numero</label>
-    <input id="numero" name="numero" type="text" v-model="numero">
+    <input id="numero" name="numero" type="number" v-model="numero">
     <label for="bairro">Bairro</label>
     <input id="bairro" name="bairro" type="text" v-model="bairro">
     <label for="cidade">Cidade</label>
@@ -27,6 +27,10 @@
 <script>
 import { mapFields } from "@/helpers.js";
 import { getCep } from "@/services.js";
+import VueToast from 'vue-toast-notification';
+import 'vue-toast-notification/dist/theme-sugar.css';
+import Vue from "vue";
+Vue.use(VueToast);
 
 export default {
   computed: {
@@ -56,6 +60,12 @@ export default {
           this.estado = response.data.uf;
           this.cidade = response.data.localidade;
         });
+
+        Vue.$toast.clear();
+        Vue.$toast.success('O CEP contêm 8 dígitos!');
+      } else {
+        Vue.$toast.clear();
+        Vue.$toast.error('Informe um CEP válido com 8 digitos!');
       }
     }
   }
