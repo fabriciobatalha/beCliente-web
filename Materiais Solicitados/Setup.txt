@@ -1,0 +1,4 @@
+O passo a passo de como rodar os dois projetos se encontra no README.md de cada repositório.
+
+https://github.com/fabriciobatalha/beCliente-web
+https://github.com/fabriciobatalha/beCliente-api
