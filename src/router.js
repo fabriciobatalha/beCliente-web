@@ -1,5 +1,6 @@
 import Vue from "vue"
 import Router from "vue-router"
+import PaginaNaoEncontrada from "./views/PaginaNaoEncontrada.vue"
 import Home from "./views/Home.vue"
 import Login from "./views/Login.vue"
 import Dash from "./views/dash/Dash.vue"
@@ -12,6 +13,10 @@ const router = new Router({
   mode: "history",
   base: process.env.BASE_URL,
   routes: [
+    {
+      path: "*",
+      component: PaginaNaoEncontrada
+    },
     {
       path: "/",
       name: "home",
