@@ -1,5 +1,5 @@
 <h1 align="center"> beCliente-web </h1>
-<p align="center"> Este projeto deverá rodar juntamente com o projeto beCliente-api </p>
+<p align="center"> Este projeto deverá rodar juntamente com o projeto [beCliente-api](https://github.com/fabriciobatalha/beCliente-api) </p>
 
 ### Pré-requisitos
 
